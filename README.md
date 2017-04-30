@@ -23,9 +23,10 @@ Or install it yourself as:
 
 ### Ping to authenticate
 
-Verify that your API key is valid and that you can reach the Geckoboard API.
+Verify that your API key is valid and that you can reach the Geckoboard API. (Test in IRB or Rails console)
 
 ```ruby
+require 'geckoboard'
 client = Geckoboard.client('222efc82e7933138077b1c2554439e15')
 client.ping # => true
 ```
